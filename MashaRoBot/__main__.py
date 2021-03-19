@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) `My name is` *Masha*
+`Hellow` [🤗](https://telegra.ph/file/223c6f225a5a41ef27cf1.jpg) `My name is` *Masha*
 `I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
+            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/Jin_Jin_robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="💾 SOURCE", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/wastebots"
+            text="👥 SUPPORT", url="https://t.me/mpazaanbot"
         ),
     ],
 ]
@@ -102,12 +102,12 @@ HELP_STRINGS = """
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-MASHA_IMG = "https://telegra.ph/file/6937614341f42020a2ebc.jpg"
+MASHA_IMG = "https://telegra.ph/file/223c6f225a5a41ef27cf1.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
+ You can support the project via [Paypal](ko-fi.com/sawada) or by @munnipopz \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @munnipopz."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -387,8 +387,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *MASHA*
-                 \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
+            text=""" Hi..🤗 I'm *Jin_Jin_robot*
+                 \nHere is the [Source Code](http://t.me/mpazaan) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
